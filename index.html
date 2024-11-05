@@ -1,0 +1,36 @@
+<!-- Doc 2 is in language en-US. Optimizing Doc 2 for scanning, using lists and bold where appropriate, but keeping language en-US, and adding id attributes to every HTML element: -->
+<head></head>
+<body>
+  <h2 id="sluez1">Backend</h2>
+  <ul id="sluez1">
+    <li id="sluez1">Node.js application</li>
+    <li id="41s2l">Scraper and backend operations, <b>http module</b> for webserver</li>
+  </ul>
+  <h2 id="58uavpc">Database</h2>
+  <p id="58uavpc">MySQL</p>
+  <h2 id="hn9k5hs">Frontend</h2>
+  <p id="hn9k5hs">React</p>
+  <h2 id="t3r0iw">Optional</h2>
+  <p id="t3r0iw">Server-sided, so <b>Node.js with Puppeteer</b></p>
+  <h2 id="x8rfoh">Possibilities for search</h2>
+  <p id="8wj6qx">Use <b>Elasticsearch</b>, easy to setup (~1-4GB RAM)</p>
+    <li id="n14qjwv">Consider if the features of a dedicated search platform like Apache Solr are needed, or if MyISAM will suffice</li>
+  </ul>
+  <h2 id="i7xeyxo">Possible changes in the web server</h2>
+  <p id="i7xeyxo">Consider using Apache or Nginx instead of Node.js HTTP. Further research needed to determine if a change is required (most likely no need, Node.js is a good web server)</p>
+  <h2 id="rklbti4">User Flow</h2>
+  <img src="https://www.plantuml.com/plantuml/png/TL91Rnez4BtlhvYFovT85RdaM5MX1BMfgfG2RO_8s0EuyjfRUno2glptpgnt0K6oXzsrFS_ptfjtbqX5ohMh_hDUksmGtezlRyQtotjiNDZNw6dOyFc7gY9B3k6u3_TMRQAgOHqYp32XYdeBdwBYetbPpFU9iAwEcELZC7YbNSZc7Gp6yeK7luugKSoQSiG1xq_pobaDvNWQmvCr60VNyBS2Vivls-5gcJ0-OMJeBrnnSrd8HL-jpyy7e3pZu4bPZ_4gMoxumK0cG1ZNIgD0PgWqoS_8kR1BaBaY0GLOHLuYA6-WaogwDo8t3GVNhtGePSlKci0tzgQ4DUrKnCuTwIKwXh-J_7xc1WvJt-DFncXvAMsjy6HsDlW4EqjRe2s2GMEr8ZpGQfmYfbRtf5xQzwlM5KJhdjLuGh5i29-9KuciBfLlM8cdDHUOuxKJl-5wsUY6cg09E_O-Ep2A52iq-6pzHkIsqlUoqAfHA-iiMKn7KI_LHQvaLak3dHQPxV-9DVTIVgfeGqwzYAE00bHDqoTYr3HEJ6Md1rseFihuIweEUMaJ8DWtHbCcBvIPx0pTIPy-VMNcYyNqHbvpBfKwERrCZpSNiQ1mm7-PVtliu6VGy_5yB-1Y-Jg6kitzPBw0qVI1hxZZJhbs_m00"></img><h2 id="onuvqgl">Hosting Proposal</h2>
+  <ul id="onuvqgl">
+    <li id="qb8t2i">A machine with Ubuntu Server (Linux is industry standard for hosting, Debian-based is more common). Alternative: Fedora CoreOS</li>
+    <li id="k6wc1q">8GB of RAM (4GB theoretically possible due to small dataset of database, but 8 feels safe enough for testing and development)</li>
+    <li id="1a1ovve">~64GB storage (minimum required ~10GB)</li>
+    <li id="kmeo08p">Dual-core CPU should be enough (Apache Solr trades CPU for RAM, Node.js, MySQL are efficient on usage, unsure about React)</li>
+    <li id="pm12i4ro">No dedicated GPU required</li>
+  </ul>
+  <h2 id="gu2jp1">Possible Hosting Solutions</h2>
+  <ul id="gu2jp1">
+    <li id="kfb5bvh">Faculty (budget should be available)</li>
+    <li id="mfyf4t">Azure (faculty cooperates with Microsoft, should be possible)</li>
+    <li id="ci7sugo">Other options not funded by the team</li>
+  </ul>
+</body>
